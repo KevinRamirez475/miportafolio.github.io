@@ -1,68 +1,213 @@
-/* styles.css */
-
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
+/* Variables de color para mantener un diseño coherente */
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #2b6cb0;
+    --text-color: #333;
+    --light-bg: #f7fafc;
+    --sidebar-bg: #2d3748;
+    --sidebar-text: #e2e8f0;
+    --border-color: #e2e8f0;
 }
 
-header {
-    background-color: #333;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #edf2f7;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.cv-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* Barra Lateral */
+.sidebar {
+    width: 35%;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    padding: 40px 30px;
+}
+
+.sidebar h2 {
     color: #fff;
-    padding: 20px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.sidebar h2:first-child {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.sidebar a {
+    color: var(--sidebar-text);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: var(--secondary-color);
+}
+
+.skill-category {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.skill-category strong {
+    color: #cbd5e0;
+    display: block;
+}
+
+/* Contenido Principal */
+.main-content {
+    width: 65%;
+    padding: 40px;
 }
 
 header h1 {
-    margin: 0;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #fff;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Estilos específicos para la sección de proyectos */
-section h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-}
-
-/* Estilos específicos para la sección de contacto */
-section p {
+header h3 {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
-/* Estilos para enlaces */
-a {
-    color: #007bff;
-    text-decoration: none;
+.main-content section {
+    margin-bottom: 30px;
 }
 
-a:hover {
-    text-decoration: underline;
+.main-content h2 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.job {
+    margin-bottom: 25px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.job-header h4 {
+    color: #2d3748;
+    font-size: 1.1rem;
+}
+
+.job-header .date {
+    font-size: 0.9rem;
+    color: #718096;
+    font-weight: 600;
+}
+
+.job ul {
+    padding-left: 20px;
+}
+
+.job ul li {
+    margin-bottom: 5px;
+}
+
+.edu-item {
+    margin-bottom: 15px;
+}
+
+.edu-item h4 {
+    color: #2d3748;
+}
+
+/* Listas en línea para herramientas e intereses */
+.inline-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+.inline-list li {
+    background: var(--light-bg);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid var(--border-color);
+}
+
+/* Botón de imprimir */
+.btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+    }
+}
+
+/* Estilos de impresión */
+@media print {
+    body {
+        background-color: white;
+    }
+    .cv-container {
+        margin: 0;
+        box-shadow: none;
+        max-width: 100%;
+    }
+    .btn {
+        display: none;
+    }
 }
