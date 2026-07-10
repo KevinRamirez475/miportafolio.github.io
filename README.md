@@ -20,8 +20,8 @@ Soy un desarrollador apasionado por la tecnología y siempre estoy aprendiendo a
 - ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
   
 ### 📫 Contacto:
-- **Correo**: tuemail@example.com
-- **LinkedIn**: [Mi LinkedIn](https://www.linkedin.com/in/tu-perfil/)
+- **Correo**: kevinramirez475@hotmail.com
+- **LinkedIn**: [Mi LinkedIn](UCHz6i67gXq1vwjvfku_BpIA)
   
 ### 📈 Mis estadísticas de GitHub:
 ![Estadísticas GitHub](https://github-readme-stats.vercel.app/api?username=tu-usuario&show_icons=true&theme=radical)
