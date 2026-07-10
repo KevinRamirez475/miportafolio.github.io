@@ -134,7 +134,7 @@ Actualmente estoy finalizando la Ingeniería en Desarrollo y Gestión de Softwar
 **Kevinramirez475@hotmail.com**
 
 💼 **LinkedIn**  
-https://linkedin.com/in/kevinramirez
+[https://linkedin.com/in/kevinramirez](https://www.linkedin.com/in/kevin-axel-ramirez-rosas/?skipRedirect=true)
 
 💻 **GitHub**  
 https://github.com/KevinRamirez475
